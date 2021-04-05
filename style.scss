@@ -1,0 +1,202 @@
+@use './styles/partials';
+@use './styles/variables';
+
+
+/*
+    1. Typography
+    2. Helpers
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    background-color: variables.$no-dark;
+    font-family: 'Space Grotesk', monospace;
+}
+
+// TYPOGRAPHY
+
+p, li {
+    color: variables.$no-light;
+    font-size: 1.2rem;
+} 
+
+a {
+    &:visited {
+        color: variables.$no-dark;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+li {
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    &:first-of-type {
+        margin-top: 1rem;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: variables.$no-light; 
+    text-transform: uppercase; 
+    line-height: 1.1;
+    letter-spacing: 0.02rem;
+}
+
+h1 {
+    font-size: 5.5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.85rem;
+}
+
+h5 {
+    font-size: 1.65rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+    letter-spacing: normal;
+}
+
+p {
+    font-size: .9rem;
+}
+
+a {
+    font-size: .8rem;
+}
+
+.no-container {
+    max-width: 100%;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+//Helpers
+.no-left {
+    margin-left: variables.$main-margin-left
+}
+
+.no-right {
+    margin-right: variables.$main-margin-right
+}
+
+@media (min-width:variables.$no-ex-small) {
+
+}
+
+@media (min-width:variables.$no-small) {
+
+}
+
+@media (min-width:variables.$no-mid) {
+
+    h1 {
+        font-size: 7rem;
+    }
+    
+    h2 {
+        font-size: 4.5rem;
+    }
+    
+    h3 {
+        font-size: 2.5rem;
+    }
+    
+    h4 {
+        font-size: 4rem;
+    }
+    
+    h5 {
+        font-size: 3rem;
+    }
+    
+    h6 {
+        font-size: 2rem;
+    }
+
+    p, a {
+        font-size: 1rem
+    }
+}
+
+@media (min-width:variables.$no-tablet) {
+
+    h1 {
+        font-size: 9rem;
+    }
+
+    h3 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width:variables.$no-large) { 
+    h1 {
+        font-size: 13rem;
+        line-height: 1.1;
+        letter-spacing: 0.3rem;
+    }
+    
+    h2 {
+        font-size: 6rem;
+        line-height: 1.1;
+        letter-spacing: 0.3rem;
+    }
+    
+    h3 {
+        font-size: 5rem;
+        line-height: 1.1;
+        letter-spacing: 0.2rem;
+    }
+    
+    h4 {
+        font-size: 4rem;
+        line-height: 1.1;
+        letter-spacing: 0.1rem;
+    }
+    
+    h5 {
+        font-size: 3rem;
+        line-height: 1.1;
+        letter-spacing: 0.1rem;
+    }
+    
+    h6 {
+        font-size: 2rem;
+        line-height: 1.1;
+        letter-spacing: 0.1rem;
+    }
+}
+
+@media (min-width:variables.$no-ex-large) {
+
+}

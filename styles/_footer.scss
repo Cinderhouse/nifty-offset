@@ -1,0 +1,54 @@
+@use "./variables";
+
+.no-footer__container {
+    max-width: 100%;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid variables.$no-light;
+}
+
+.no-footer__links {
+   width: 80%;
+   display: flex;
+   justify-content: center;
+}
+
+.no-footer__link {
+    color: variables.$no-light;
+    text-decoration: none;
+    margin-right: 1rem; 
+    &:visited {
+        color: variables.$no-light;
+    }
+}
+
+@media (min-width:variables.$no-ex-small) {
+
+}
+
+@media (min-width:variables.$no-small) {
+
+}
+
+@media (min-width:variables.$no-mid) {
+    .no-footer__links {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width:variables.$no-tablet) {
+
+}
+
+@media (min-width:variables.$no-large) { 
+ 
+}
+
+@media (min-width:variables.$no-ex-large) {
+
+}

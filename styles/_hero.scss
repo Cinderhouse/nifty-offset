@@ -1,0 +1,78 @@
+@use "./variables";
+
+.no-hero {
+    display: flex;
+    flex-direction: column;
+    margin: variables.$no-container;
+    margin-top: 2rem;
+}
+
+.no-hero__header {
+    max-width: 100%;
+}
+
+.no-hero__inner-container {
+    display: flex;
+    align-items: center;
+}
+
+.no-hero__sting-container { 
+    display: none;
+}
+.no-hero__sting {
+    height: 100%;
+}
+
+.no-hero__divider {
+    padding: .6rem 0.1rem .6rem 1rem;
+    width: 100%;
+    max-width: 100%;
+    background-color: variables.$no-light; 
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.no-hero__divider h3 {
+  color: variables.$no-dark;
+}
+
+@media (min-width:variables.$no-ex-small) { }
+@media (min-width:variables.$no-small) { }
+@media (min-width:variables.$no-mid) { 
+    .no-hero {
+        display: flex;
+        margin: variables.$no-container;
+        margin-top: 3rem;
+    }
+    .no-hero__sting-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .no-hero__sting {
+        height: 100%;
+    }
+
+    .no-hero__divider {
+        width: 100%; 
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
+}
+@media (min-width:variables.$no-tablet) { 
+    
+    .no-hero__divider h3 {
+        margin-bottom: none;
+    }
+}
+@media (min-width:variables.$no-large) { 
+    .no-hero {
+        margin: variables.$no-container;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+}
+@media (min-width:variables.$no-ex-large) { }

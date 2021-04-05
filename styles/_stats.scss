@@ -1,0 +1,131 @@
+@use "./variables";
+
+.no-stats__container {
+    background-color: variables.$no-light;
+    height: 100%; // delete me 
+    padding-top: 3rem;
+    p {
+        color: variables.$no-dark;
+    }
+}
+
+.no-stats__title {
+    background-color: variables.$no-dark;
+    padding: 1rem;
+    max-width: 100%;
+    margin: variables.$no-container;
+    margin-bottom: 1rem;
+}
+
+.no-stats__title h3 {
+    color: variables.$no-light;
+    display: flex;
+
+}
+
+.no-stats__description {
+    
+}
+
+.no-stats__why-container {
+    margin: variables.$no-container;
+    padding-bottom: 3rem;
+
+}
+
+.no-stats__why {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.no-stats__stat-container {
+    border-bottom: 2px solid variables.$no-dark;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
+
+.no-stats__stat {
+    color: variables.$no-dark;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    text-align: right;
+}
+
+.no-stats__why:first-of-type > .no-stats__blurb {
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+.no-stats__link-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-decoration: none;
+    border-top: 2px solid variables.$no-dark;
+    width: 100%;
+}
+
+.no-stats__links-header {
+    color: variables.$no-dark;
+    text-align: left;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+}
+
+.no-stats-link {
+    color: variables.$no-dark;
+}
+
+.no-stats__links-header {
+    margin-top: 2rem;
+}
+
+@media (min-width:variables.$no-ex-small) {}
+@media (min-width:variables.$no-small) {}
+@media (min-width:variables.$no-mid) { 
+    .no-stats__stat {
+        font-size: 7rem;
+    }
+  
+}
+@media (min-width:variables.$no-tablet) {
+ 
+}
+@media (min-width:variables.$no-large) { 
+    .no-stats__stat {
+        color: variables.$no-dark;
+        font-size: 12rem;
+        width: 80%;
+    }
+
+    .no-stats__stat-container {
+        margin-bottom: 4rem;
+    }
+    
+    .no-stats__blurb {
+        width: 100%;
+    }
+
+    .no-stats__blurb {
+        width: 100%;
+    }
+    
+    .no-stats__why:first-of-type > .no-stats__blurb {
+        width: 80%;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .no-stats__links-header {
+        margin-top: 2rem;
+    }
+
+    .no-stats-link {
+        text-align: right;
+    }
+}
+@media (min-width:variables.$no-ex-large) { }
